@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <title>Budżet domowy</title>
+</head>
+<body>
+    <img src="./photos/budget1.png" alt="logo_bg" class="logo">
+    <div class="info">
+        <p>placeholder_info</p>
+    </div>
+    <div class="table">
+        <div class="income">
+            <div class="income_form">
+                    <p>PRZYCHODY</p>
+                        <input type="text" id="income_name" placeholder="Nazwa przychodu" width="50px" maxlength="40">
+                        <input type="number" id="income_cost" placeholder="kwota PLN" width="50px">
+                        <input type="submit" value="Dodaj" id="income_btn">
+            </div>
+            <div class="income_list">
+                <ul id="income_list">
+                </ul>
+            </div>
+            <div id="total_income">
+                <p>Suma przychodów: </p>
+            </div>
+        </div>
+        <div class="outcome">
+            <div class="outcome_form">
+                    <p>WYDATKI</p>
+                        <input type="text" id="outcome_name" placeholder="Nazwa wydatku" width="50px" maxlength="40">
+                        <input type="number" id="outcome_cost" placeholder="kwota PLN" width="50px">
+                        <input type="submit" value="Dodaj" id="outcome_btn">
+            </div>
+            <div class="outcome_list">
+                <ul id="outcome_list" >
+                </ul>
+            </div>
+            <div id="total_outcome">
+                <p>Suma wydatków: </p>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <!-- <script src="./btn_app.js"></script> -->
+</body>
+</html>

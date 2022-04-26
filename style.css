@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+
+.logo {
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.info {
+    border: 2px solid red;
+    text-align: center;
+    padding: 5px;
+    color: red;
+    margin: 10px;
+}
+
+.table {
+    display: flex;
+}
+
+.income, .outcome {
+    border: 2px solid rgb(133, 125, 125);
+    padding: 10px;
+    margin: 5px;
+    background-color: darkgray;
+
+}
+
+.list_class {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn_edit {
+    margin-left: auto;
+}
