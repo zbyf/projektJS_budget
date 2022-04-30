@@ -16,8 +16,8 @@ const incomeName = () => {
     if (income_name !== "" && income_cost > 0) {
         const income_table = {id: income_name, cost: income_cost};
         const li = cel("li");
-        const btn_edit = cel("button");
-        const btn_del = cel("button");
+        let btn_edit = cel("button");
+        let btn_del = cel("button");
         li.textContent = income_table.id + ": " + income_table.cost + "  PLN";
         li.classList.add("list_class");
         btn_edit.textContent = "edytuj";
@@ -36,10 +36,22 @@ const incomeName = () => {
 
 // KOMBINACJE Z EDIT BTN
 
+btn_edit.addEventListener("click", (e) => {
+    incomeEdit();
+}); 
 
-        // btnEdit.addEventListener("click", (e) => {
-        //     incomeEdit
-        // }); 
+btn_del.addEventListener("click", (e) => {
+    incomeDel();
+}); 
+
+const incomeEdit = () => { 
+    console.log("test1");
+};
+
+const incomeDel = () => { 
+const delItem = qs('li');
+income_list.removeChild(delItem);
+};
 
 // KONIEC KOMBINACJI Z EDIT BTN
 
@@ -54,42 +66,14 @@ incomeBtn.addEventListener("click", (e) => {
         incomeName()
     });  
 
-    const x = () => { 
-        if (qs("#btn_edit") === true) {
-            const btnEdit = qs("#btn_edit");
-            const incomeEdit = () => {
-                console.log("dupa")
-            };
-            btnEdit.addEventListener("click", (e) => {
-                incomeEdit()
-                  }); 
-        } else {
-            console.log("i chuj");
-        };
-    };
 
-// SYF ROBOCZY PONIŻEJ 
-    
-// const btnEdit = qsAll("#btn_edit");
+btn_edit.addEventListener("click", (e) => {
+    incomeEdit();
+}); 
 
-// const incomeEdit = () => {
-//     console.log("dupa")
-// };
-
-// btnEdit.addEventListener("click", (e) => {
-//         incomeEdit()
-//     });
-
-// INCOME EDIT BTN 
-
-// const incomeEdit = () => {
-//         console.log("dupa")
-// };
-
-// btnEdit.addEventListener("click", (e) => {
-//         incomeEdit()
-// });
-
+btn_del.addEventListener("click", (e) => {
+    incomeDel();
+}); 
 
 
 // OUTCOMES
